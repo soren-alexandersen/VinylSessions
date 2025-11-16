@@ -1,14 +1,14 @@
-*Privacy Policy for Vinyl Collection*
+**Privacy Policy for Vinyl Collection**
 
-Last updated: November 16 2025
+*Last updated: November 16 2025*
 
 Vinyl Collection (“we”, “us”, or “our”) is a personal vinyl collection app designed to help you manage your own music library on your own devices. We take your privacy seriously and aim to collect and process as little personal data as possible.
 
 This Privacy Policy explains what information the app processes, how it is used, and what control you have.
 
-If you have any questions, you can contact us at [Contact Email].
+If you have any questions, you can contact us at soren@friis.io
 
-1. Overview
+**1. Overview**
 
 We do not run our own servers that store your vinyl collection data.
 
@@ -24,8 +24,8 @@ We do not use third-party advertising SDKs or tracking tools.
 
 Some limited information may be processed by Apple and by external services that help identify albums (for example, album cover recognition or music databases). Those services use their own privacy policies.
 
-2. Information we process
-2.1 Collection data you enter
+**2. Information we process**
+**2.1 Collection data you enter**
 
 Vinyl Collection lets you store information about your vinyl records, such as:
 
@@ -47,14 +47,13 @@ iCloud / CloudKit (optional): If you enable iCloud sync, your data is stored in 
 
 We as the developer do not have direct access to your private iCloud database contents.
 
-2.2 Album recognition & external services
+**2.2 Album recognition & external services**
 
 When you use features such as:
 
 Scanning an album cover with the camera to identify it, or
 
 Fetching album metadata (for example from public music databases or APIs),
-
 the app may send some information to third-party services, for example:
 
 An image of the album cover
@@ -67,7 +66,7 @@ This is done only to identify the album and retrieve metadata (title, artist, ar
 
 These third-party services operate under their own privacy policies.
 
-2.3 Diagnostics & crash data
+**2.3 Diagnostics & crash data**
 
 Depending on your device settings, Apple may collect anonymous crash reports and diagnostics for apps, including Vinyl Collection.
 
@@ -81,7 +80,7 @@ We do not use it to identify you personally.
 
 We do not currently integrate any additional third-party analytics SDKs.
 
-3. How we use your data
+**3. How we use your data**
 
 We use the information processed by Vinyl Collection strictly to:
 
@@ -101,12 +100,12 @@ Use your data for targeted advertising
 
 Build marketing profiles about you
 
-4. Data storage and security
-4.1 On your device
+**4. Data storage and security**
+**4.1 On your device**
 
 Your collection data is stored locally on your device in the app’s private storage. iOS protects this storage with its built-in security features (sandboxing, device encryption, etc.).
 
-4.2 iCloud / CloudKit (if enabled)
+**4.2 iCloud / CloudKit (if enabled)**
 
 If you turn on iCloud sync:
 
@@ -118,7 +117,7 @@ We do not control Apple’s servers and do not have direct access to your iCloud
 
 For more information about Apple’s privacy practices, please see Apple’s privacy policy.
 
-5. Your choices and controls
+**5. Your choices and controls**
 
 Within the app and your device settings, you can:
 
@@ -134,19 +133,19 @@ Data previously stored in iCloud may remain in your iCloud account until removed
 
 If you would like us to assist with data questions related to the app, you can contact us at [Contact Email]. Note that we may not be able to see or access the contents of your collection if it lives only in your iCloud/private storage.
 
-6. Children’s privacy
+**6. Children’s privacy**
 
 Vinyl Collection is not directed to children under 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect personal information from children.
 
 If you are a parent or guardian and believe your child has provided personal information through the app, please contact us so we can help you understand what data may be stored on the device or in iCloud.
 
-7. Third-party links and services
+**7. Third-party links and services**
 
 Vinyl Collection may use or link to third-party services (such as music databases or APIs) only for functionality like album identification and metadata lookup. These services have their own privacy policies and practices, which we do not control.
 
 We recommend reviewing the privacy policies of any third-party services you use through the app.
 
-8. Changes to this Privacy Policy
+**8. Changes to this Privacy Policy**
 
 We may update this Privacy Policy from time to time, for example if we:
 
@@ -160,9 +159,9 @@ Need to comply with new legal requirements
 
 When we do, we will update the “Last updated” date at the top. Significant changes may also be announced in the app or via release notes.
 
-9. Contact
+**9. Contact**
 
 If you have any questions or concerns about this Privacy Policy or how Vinyl Collection handles your data, please contact:
 
-[Developer Name]
-Email: [Contact Email]
+Søren Alexandersen
+Email: soren@friis.io
