@@ -84,13 +84,13 @@ We do not currently integrate any additional third-party analytics SDKs.
 
 We use the information processed by Vinyl Sessions strictly to:
 
-Provide core functionality (managing your Vinyl Sessions and wishlist)
+Provide core functionality and understand user behavior to improve the app.
 
-Recognize albums and fetch metadata when you request it
+Recognize albums and fetch metadata when you request it.
 
-Sync your collection between your devices via iCloud, if enabled
+Sync your collection between your devices via iCloud, if enabled.
 
-Improve the app’s reliability and fix bugs (via anonymous diagnostics/crash data)
+Improve the app’s reliability and fix bugs (via anonymous diagnostics/crash data).
 
 We do not:
 
