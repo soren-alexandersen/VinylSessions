@@ -6,7 +6,7 @@ Vinyl Sessions (“we”, “us”, or “our”) is a personal Vinyl Sessions a
 
 This Privacy Policy explains what information the app processes, how it is used, and what control you have.
 
-If you have any questions, you can contact us at soren@friis.io
+If you have any questions, you can contact us at soren@vinylsessions.ai
 
 **1. Overview**
 
@@ -199,7 +199,7 @@ Vinyl Sessions offers optional paid subscriptions managed through Apple's App St
 - Export your collection as JSON backup anytime
 - Downgrading retains your existing albums (grandfathered access)
 
-For questions about billing, contact: soren@friis.io
+For questions about billing, contact: soren@vinylsessions.ai
 
 
 **10. Contact**
@@ -207,4 +207,4 @@ For questions about billing, contact: soren@friis.io
 If you have any questions or concerns about this Privacy Policy or how Vinyl Sessions handles your data, please contact:
 
 Søren Alexandersen
-Email: soren@friis.io
+Email: soren@vinylsessions.ai
