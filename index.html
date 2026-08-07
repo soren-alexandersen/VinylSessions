@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinyl Sessions - Stop cataloging. Start listening. Rediscover your record collection with AI-curated sessions and musician connections.">
+    <title>Vinyl Sessions - Rediscover Your Records</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#00E5E5">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#00E5E5">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="grid-background"></div>
+    <div class="scanlines"></div>
+    
+    <!-- Theme Selector -->
+    <div class="theme-selector">
+        <div class="theme-options">
+            <div class="theme-option selected" data-theme="walking-on-neon">
+                <div class="theme-color-dot"></div>
+                <span class="theme-name">Walking on Neon</span>
+            </div>
+            <div class="theme-option" data-theme="highway-through-hell">
+                <div class="theme-color-dot"></div>
+                <span class="theme-name">Highway Through Hell</span>
+            </div>
+            <div class="theme-option" data-theme="magic-in-a-bottle">
+                <div class="theme-color-dot"></div>
+                <span class="theme-name">Magic in a Bottle</span>
+            </div>
+            <div class="theme-option" data-theme="funky-little-town">
+                <div class="theme-color-dot"></div>
+                <span class="theme-name">Funky Little Town</span>
+            </div>
+            <div class="theme-option" data-theme="another-prick-at-the-mall">
+                <div class="theme-color-dot"></div>
+                <span class="theme-name">Another Prick at The Mall</span>
+            </div>
+            <div class="theme-option" data-theme="hmmm-hmmm-hmmm-hmmm">
+                <div class="theme-color-dot"></div>
+                <span class="theme-name">Hmmm Hmmm Hmmm Hmmm</span>
+            </div>
+        </div>
+        <button class="theme-toggle-btn" aria-label="Toggle theme selector">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <path d="M12 1v6m0 6v6M1 12h6m6 0h6"/>
+                <path d="M4.2 4.2l4.2 4.2m5.6 0l4.2-4.2M4.2 19.8l4.2-4.2m5.6 5.6l4.2 4.2"/>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <!-- Hero Header (Centered) -->
+            <div class="hero-header">
+                <h1 class="mega-title">
+                    <span class="line-1">VINYL</span>
+                    <span class="line-2">SESSIONS</span>
+                </h1>
+            </div>
+            
+            <!-- Hero Grid (Like story sections) -->
+            <div class="hero-story-grid">
+                <div class="hero-story-content">
+                    <p class="hero-tagline-moved">Catalog smart. Listen more.</p>
+                    <p class="hero-intro">
+                        AI-powered cataloging meets curated listening. Vinyl Sessions helps you rediscover your record collection through intelligent features like AI-generated listening sessions, musician connection graphs, and daily album highlights.<br><br> Enjoy your vinyl like never before.
+                    </p>
+                    
+                    <!-- Download Button -->
+                    <a href="https://apps.apple.com/app/vinyl-sessions/id6755359806" class="app-store-badge-link" aria-label="Download on the App Store">
+                        <img src="images/download-vinyl-sessions-on-the-appstore.svg" alt="Download on the App Store" class="app-store-badge">
+                    </a>
+                </div>
+                
+                <!-- Hero Screenshot -->
+                <div class="hero-story-image">
+                    <img src="images/screenshots/home-screen-remember-this.png" alt="Vinyl Sessions Home Screen with Remember This" class="hero-phone-image">
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <svg class="scroll-arrow" viewBox="0 0 40 40" width="40" height="40">
+                    <path d="M 10 15 L 20 25 L 30 15" fill="none" stroke="#00E5E5" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="philosophy">
+        <div class="container-narrow">
+            <blockquote class="quote">
+                "Vinyl Sessions exists because spreadsheets and auction sites drained the joy out of collecting. 
+                I wanted an app that was engaging, looked great, helped me understand my collection and listen to it more often.<br><br>Vinyls are not just meant for shelving. They're meant to be played. As a supplement to liner notes, this app allows me to explore the network of musicians across my collection, and reminds me why I fell in love with vinyl in the first place."
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Section Header -->
+    <section class="section-header-intro">
+        <div class="container">
+            <h2 class="section-mega-title">
+                <span class="line-1">VINYL</span>
+                <span class="line-2">SESSIONS</span>
+            </h2>
+            <p class="section-tagline">Rethinking vinyl collection for the modern collector</p>
+        </div>
+    </section>
+
+    <!-- The Promise -->
+    <section class="promise">
+        <div class="container-narrow">
+            <div class="promise-grid">
+                <div class="promise-item">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 100 100" width="80" height="80">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#00E5E5" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <circle cx="50" cy="50" r="25" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <circle cx="50" cy="50" r="15" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <circle cx="50" cy="50" r="5" fill="#00E5E5"/>
+                            <path d="M 50 5 L 50 15 M 50 85 L 50 95 M 5 50 L 15 50 M 85 50 L 95 50" stroke="#FF0080" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Vinyl Sessions</h3>
+                    <p>Let AI craft the perfect listening experience from your collection. Pick genres, set duration, and enjoy inspiring listening sessions with tracks surfaced from your collection.</p>
+                </div>
+                
+                <div class="promise-item">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 100 100" width="80" height="80">
+                            <path d="M 50 20 Q 35 25 30 40 Q 35 55 50 60 Q 65 55 70 40 Q 65 25 50 20" fill="none" stroke="#8000FF" stroke-width="2.5"/>
+                            <circle cx="50" cy="35" r="8" fill="none" stroke="#00E5E5" stroke-width="2.5"/>
+                            <line x1="50" y1="43" x2="50" y2="65" stroke="#00E5E5" stroke-width="2.5"/>
+                            <line x1="50" y1="52" x2="40" y2="58" stroke="#00E5E5" stroke-width="2.5"/>
+                            <line x1="50" y1="52" x2="60" y2="58" stroke="#00E5E5" stroke-width="2.5"/>
+                            <path d="M 35 65 L 35 75 Q 35 80 40 80 L 60 80 Q 65 80 65 75 L 65 65" fill="none" stroke="#00E5E5" stroke-width="2.5"/>
+                            <circle cx="30" cy="25" r="3" fill="#FFE500"/>
+                            <circle cx="70" cy="30" r="3" fill="#FFE500"/>
+                            <circle cx="45" cy="70" r="2" fill="#FFE500"/>
+                        </svg>
+                    </div>
+                    <h3>Musician Graph</h3>
+                    <p>Did you know that Alison Krauss sang on two Def Leppard songs? See the invisible threads between your albums. Track every musician, producer, and session player across your entire collection. Powered by MusicBrainz data.</p>
+                </div>
+                
+                <div class="promise-item">
+                    <div class="promise-icon">
+                        <svg viewBox="0 0 100 100" width="80" height="80">
+                            <circle cx="50" cy="50" r="40" fill="none" stroke="#00E5E5" stroke-width="2"/>
+                            <path d="M 50 20 L 55 35 L 70 35 L 58 45 L 63 60 L 50 50 L 37 60 L 42 45 L 30 35 L 45 35 Z" fill="#FFE500" stroke="#FF0080" stroke-width="1.5"/>
+                            <circle cx="50" cy="50" r="8" fill="none" stroke="#8000FF" stroke-width="2"/>
+                            <path d="M 20 50 Q 25 45 30 50 Q 25 55 20 50 M 70 50 Q 75 45 80 50 Q 75 55 70 50 M 50 20 Q 45 25 50 30 Q 55 25 50 20 M 50 70 Q 45 75 50 80 Q 55 75 50 70" fill="#FFE500"/>
+                        </svg>
+                    </div>
+                    <h3>Remember This</h3>
+                    <p>A different album from your collection greets you each day. Rediscover forgotten gems and keep your passion alive.</p>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <svg class="scroll-arrow" viewBox="0 0 40 40" width="40" height="40">
+                    <path d="M 10 15 L 20 25 L 30 15" fill="none" stroke="#FF0080" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Features -->
+    <section class="more-features">
+        <div class="container">
+            <h2 class="section-mega-title more-features-header">
+                <span class="line-1">AND THERE'S</span>
+                <span class="line-2">MORE</span>
+            </h2>
+            <p class="more-features-subtitle">To make vinyl collection easier and engaging</p>
+            <div class="features-compact-grid">
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <path d="M 8 8 L 16 8 M 8 12 L 16 12 M 8 16 L 13 16" stroke="#8000FF" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="17" cy="7" r="2" fill="#FF0080"/>
+                            <path d="M 16 7 L 17 8 L 18.5 6.5" stroke="#FFF" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Album Tagging</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="5" y="7" width="14" height="10" rx="1" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="2.5" fill="#FFE500"/>
+                            <path d="M 8 7 L 8 5 L 16 5 L 16 7" stroke="#00E5E5" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">AI Album Recognition</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M 12 3 L 12 15" stroke="#00E5E5" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M 8 11 L 12 15 L 16 11" fill="none" stroke="#FFE500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="4" y="16" width="16" height="4" rx="1" fill="none" stroke="#8000FF" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Discogs API Import</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <path d="M 12 7 L 12 12 L 16 14" stroke="#FFE500" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="12" cy="5" r="1" fill="#FF0080"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Collection Insights</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="8" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <path d="M 12 8 L 12 12 L 15 15" stroke="#FFE500" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Remember This</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="5" y="4" width="3" height="16" rx="0.5" fill="#00E5E5"/>
+                            <rect x="10.5" y="8" width="3" height="12" rx="0.5" fill="#FF0080"/>
+                            <rect x="16" y="6" width="3" height="14" rx="0.5" fill="#FFE500"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Stats & Analytics</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M 5 8 L 5 18 L 19 18 L 19 8" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <path d="M 3 8 L 12 3 L 21 8" fill="none" stroke="#8000FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <rect x="10" y="13" width="4" height="5" fill="#FFE500"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Wishlist Management</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <path d="M 12 6 L 12 12 L 16 12" stroke="#8000FF" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M 8 16 L 10 18 L 14 14" stroke="#FFE500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Purchase History</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <line x1="4" y1="9" x2="20" y2="9" stroke="#8000FF" stroke-width="1.5"/>
+                            <line x1="9" y1="4" x2="9" y2="9" stroke="#8000FF" stroke-width="1.5"/>
+                            <circle cx="8" cy="14" r="1.5" fill="#FFE500"/>
+                            <circle cx="12" cy="14" r="1.5" fill="#FFE500"/>
+                            <circle cx="16" cy="14" r="1.5" fill="#FFE500"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Collection Timeline</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M 12 2 L 15 8 L 22 9 L 17 14 L 18 21 L 12 18 L 6 21 L 7 14 L 2 9 L 9 8 Z" fill="none" stroke="#FFE500" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Top Artists</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <polygon points="12,3 15,10 22,10 16.5,14.5 18.5,21 12,16.5 5.5,21 7.5,14.5 2,10 9,10" fill="none" stroke="#FFE500" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="2" fill="#00E5E5"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Condition Grading</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="6" y="3" width="12" height="18" rx="1" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <line x1="9" y1="7" x2="15" y2="7" stroke="#8000FF" stroke-width="1.5"/>
+                            <line x1="9" y1="11" x2="15" y2="11" stroke="#8000FF" stroke-width="1.5"/>
+                            <line x1="9" y1="15" x2="13" y2="15" stroke="#FFE500" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Track Listings</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="9" cy="12" r="6" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <circle cx="15" cy="12" r="6" fill="none" stroke="#FF0080" stroke-width="1.5"/>
+                            <path d="M 12 9 L 12 15" stroke="#FFE500" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Musician Credits</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M 12 4 Q 8 4 6 6 Q 4 8 4 12 Q 4 16 6 18 Q 8 20 12 20 Q 16 20 18 18 Q 20 16 20 12" fill="none" stroke="#8000FF" stroke-width="1.5"/>
+                            <path d="M 20 12 Q 20 8 18 6 Q 16 4 12 4" fill="none" stroke="#00E5E5" stroke-width="1.5" stroke-dasharray="2,2"/>
+                            <circle cx="12" cy="12" r="3" fill="#FFE500"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">iCloud Sync</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M 8 12 L 12 8 L 16 12" fill="none" stroke="#00E5E5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="8" x2="12" y2="16" stroke="#00E5E5" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M 6 16 L 6 18 Q 6 19 7 19 L 17 19 Q 18 19 18 18 L 18 16" fill="none" stroke="#8000FF" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Export & Backup</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="8" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <circle cx="8" cy="10" r="2" fill="#FFE500"/>
+                            <circle cx="16" cy="10" r="2" fill="#FF0080"/>
+                            <path d="M 12 8 L 9 15 L 15 15 Z" fill="#00E5E5"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Visual Themes</span>
+                </div>
+                <div class="feature-compact">
+                    <span class="feature-compact-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="9" fill="none" stroke="#00E5E5" stroke-width="1.5"/>
+                            <path d="M 8 10 L 10 12 L 16 8" stroke="#FFE500" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="feature-compact-text">Artist Discovery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Story -->
+    <section class="visual-story">
+        <div class="container">
+            <div class="story-item">
+                <div class="story-image">
+                    <img src="images/screenshots/create-vinyl-session.png" alt="Vinyl Sessions">
+                </div>
+                <div class="story-content">
+                    <h2 class="story-title">Create an inspiring listening session</h2>
+                    <p>Select genres, choose duration, and let AI curate a track-by-track listening journey. Perfect for parties, quiet evenings, or rediscovering your collection.</p>
+                </div>
+            </div>
+
+            <div class="story-item reverse">
+                <div class="story-image">
+                    <img src="images/screenshots/musician-connections.png" alt="Musician Graph">
+                </div>
+                <div class="story-content">
+                    <h2 class="story-title">Explore Musical Connections</h2>
+                    <p>Every musician, every credit, every collaboration—mapped across your collection. Discover who played on what, and follow the threads through decades of music.</p>
+                </div>
+            </div>
+
+            <div class="story-item">
+                <div class="story-image">
+                    <img src="images/screenshots/settings.png" alt="Powerful Settings">
+                </div>
+                <div class="story-content">
+                    <h2 class="story-title">Powerful Settings</h2>
+                    <p>Customize your experience with visual themes, display options, and collection management tools. Export your data, adjust your view, and make Vinyl Sessions truly yours.</p>
+                </div>
+            </div>
+
+            <div class="story-item reverse">
+                <div class="story-image">
+                    <img src="images/screenshots/discogs-import.png" alt="Discogs Sync">
+                </div>
+                <div class="story-content">
+                    <h2 class="story-title">Seamless Discogs Integration</h2>
+                    <p>Import your entire Discogs collection instantly with full API integration. Artwork, release details, condition grades, and genres—all synced automatically. Your digital catalog meets your physical collection.</p>
+                </div>
+            </div>
+
+            <div class="story-item">
+                <div class="story-image">
+                    <img src="images/screenshots/hero-screenshot-vinyl-collection-insights.png" alt="Collection Insights">
+                </div>
+                <div class="story-content">
+                    <h2 class="story-title">Understand Your Collection</h2>
+                    <p>Get AI-powered insights about your collection. See patterns in your listening habits, discover underplayed gems, and understand the story your records tell about your musical journey.</p>
+                </div>
+            </div>
+
+            <div class="story-item reverse">
+                <div class="story-image">
+                    <img src="images/screenshots/album-stories.png" alt="Album Stories">
+                </div>
+                <div class="story-content">
+                    <h2 class="story-title">AI-Generated Album Stories</h2>
+                    <p>Every album has a story—the recording sessions, the cultural moment, the artists behind it. Let AI bring those stories to life, deepening your connection with each record in your collection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Gallery -->
+    <section class="theme-gallery">
+        <div class="container">
+            <h2 class="section-title">Choose Your Vibe</h2>
+            <p class="theme-gallery-subtitle">Six stunning themes in the app. Click to preview the look and feel.</p>
+            
+            <div class="theme-gallery-grid">
+                <div class="theme-card" data-theme="walking-on-neon">
+                    <div class="theme-card-image">
+                        <img src="images/screenshots/walking-on-neon.png" alt="Walking on Neon theme" loading="lazy">
+                        <div class="theme-card-overlay">
+                            <span class="theme-card-cta">Apply Theme</span>
+                        </div>
+                    </div>
+                    <h3 class="theme-card-title">Walking on Neon</h3>
+                    <p class="theme-card-description">Retro cyberpunk vibes with cyan and magenta accents</p>
+                </div>
+
+                <div class="theme-card" data-theme="highway-through-hell">
+                    <div class="theme-card-image">
+                        <img src="images/screenshots/highway-through-wall.png" alt="Highway Through Hell theme" loading="lazy">
+                        <div class="theme-card-overlay">
+                            <span class="theme-card-cta">Apply Theme</span>
+                        </div>
+                    </div>
+                    <h3 class="theme-card-title">Highway Through Hell</h3>
+                    <p class="theme-card-description">Dark and moody with red and black contrast</p>
+                </div>
+
+                <div class="theme-card" data-theme="magic-in-a-bottle">
+                    <div class="theme-card-image">
+                        <img src="images/screenshots/magic-in-a-bottle.png" alt="Magic in a Bottle theme" loading="lazy">
+                        <div class="theme-card-overlay">
+                            <span class="theme-card-cta">Apply Theme</span>
+                        </div>
+                    </div>
+                    <h3 class="theme-card-title">Magic in a Bottle</h3>
+                    <p class="theme-card-description">Y2K nostalgia with playful pastels</p>
+                </div>
+
+                <div class="theme-card" data-theme="funky-little-town">
+                    <div class="theme-card-image">
+                        <img src="images/screenshots/funky-little-town.png" alt="Funky Little Town theme" loading="lazy">
+                        <div class="theme-card-overlay">
+                            <span class="theme-card-cta">Apply Theme</span>
+                        </div>
+                    </div>
+                    <h3 class="theme-card-title">Funky Little Town</h3>
+                    <p class="theme-card-description">Warm and inviting with golden tones</p>
+                </div>
+
+                <div class="theme-card" data-theme="another-prick-at-the-mall">
+                    <div class="theme-card-image">
+                        <img src="images/screenshots/another-prick-at-the-mall.png" alt="Another Prick at The Mall theme" loading="lazy">
+                        <div class="theme-card-overlay">
+                            <span class="theme-card-cta">Apply Theme</span>
+                        </div>
+                    </div>
+                    <h3 class="theme-card-title">Another Prick at The Mall</h3>
+                    <p class="theme-card-description">Rebellious purple and industrial edge</p>
+                </div>
+
+                <div class="theme-card" data-theme="hmmm-hmmm-hmmm-hmmm">
+                    <div class="theme-card-image">
+                        <img src="images/screenshots/hmmm-hmmm.png" alt="Hmmm Hmmm Hmmm Hmmm theme" loading="lazy">
+                        <div class="theme-card-overlay">
+                            <span class="theme-card-cta">Apply Theme</span>
+                        </div>
+                    </div>
+                    <h3 class="theme-card-title">Hmmm Hmmm Hmmm Hmmm</h3>
+                    <p class="theme-card-description">Natural and serene with earthy greens</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apple Music -->
+    <section class="apple-music">
+        <div class="container-narrow">
+            <img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-music/badge/en-us?size=250x83&amp;releaseDate=1440302400" alt="Listen on Apple Music" class="apple-music-badge">
+            <h2 class="section-title">Powered by Apple Music®</h2>
+            <p class="apple-music-text">
+                Album artwork, track streaming, instant playback—all through Apple Music® integration. 
+                Your vinyl collection meets the world's best music catalog.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing-hybrid">
+        <div class="container">
+            <h2 class="section-title-hybrid">Choose Your Plan</h2>
+            <p class="pricing-subtitle-hybrid">All features included. Only the album capacity differs.</p>
+            
+            <div class="pricing-comparison-hybrid">
+                <!-- Free -->
+                <div class="plan-card">
+                    <div class="plan-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M 12 2 L 14 9 L 21 9 L 15 14 L 17 21 L 12 16 L 7 21 L 9 14 L 3 9 L 10 9 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="plan-name">Free</h3>
+                    <div class="plan-price">
+                        <span class="price-main">$0</span>
+                    </div>
+                    <p class="plan-limit">Up to 100 albums</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            All features included
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            Vinyl Sessions
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            Musician Graph
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            iCloud Sync
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            AI Album Stories
+                        </li>
+                    </ul>
+                    
+                    <div class="plan-cta">
+                        <span class="cta-label">Perfect for getting started</span>
+                    </div>
+                </div>
+
+                <!-- Collector -->
+                <div class="plan-card plan-featured">
+                    <div class="plan-badge">POPULAR</div>
+                    <div class="plan-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M 12 2 L 14 9 L 21 9 L 15 14 L 17 21 L 12 16 L 7 21 L 9 14 L 3 9 L 10 9 Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="plan-name">Collector</h3>
+                    <div class="plan-price">
+                        <span class="price-main">$4.99</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <p class="plan-limit">Up to 500 albums</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            Everything in Free
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            5× more albums
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            Perfect for most collections
+                        </li>
+                    </ul>
+                    
+                    <div class="plan-pricing-options">
+                        <div class="pricing-option">
+                            <span class="option-label">Monthly</span>
+                            <span class="option-price">$4.99</span>
+                        </div>
+                        <div class="pricing-option pricing-option-best">
+                            <span class="option-label">Annual</span>
+                            <span class="option-price">$49.99</span>
+                            <span class="option-save">Save 17%</span>
+                        </div>
+                        <div class="pricing-option">
+                            <span class="option-label">Lifetime</span>
+                            <span class="option-price">$199.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Super Collector -->
+                <div class="plan-card plan-premium">
+                    <div class="plan-badge plan-badge-premium">UNLIMITED</div>
+                    <div class="plan-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M 12 2 L 13 6 L 17 6 L 14 8.5 L 15.5 12 L 12 9.5 L 8.5 12 L 10 8.5 L 7 6 L 11 6 Z" fill="currentColor"/>
+                            <path d="M 12 12 L 14 16 L 19 16 L 15.5 19 L 17 23 L 12 20 L 7 23 L 8.5 19 L 5 16 L 10 16 Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="plan-name">Super Collector</h3>
+                    <div class="plan-price">
+                        <span class="price-main">$6.99</span>
+                        <span class="price-period">/month</span>
+                    </div>
+                    <p class="plan-limit">Unlimited albums</p>
+                    
+                    <ul class="plan-features">
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            Everything in Collector
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            <strong>No album limits</strong>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 16 16" width="16" height="16" class="check-icon">
+                                <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M 5 8 L 7 10 L 11 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            For serious collectors
+                        </li>
+                    </ul>
+                    
+                    <div class="plan-pricing-options">
+                        <div class="pricing-option">
+                            <span class="option-label">Monthly</span>
+                            <span class="option-price">$6.99</span>
+                        </div>
+                        <div class="pricing-option pricing-option-best">
+                            <span class="option-label">Annual</span>
+                            <span class="option-price">$69.99</span>
+                            <span class="option-save">Save 17%</span>
+                        </div>
+                        <div class="pricing-option">
+                            <span class="option-label">Lifetime</span>
+                            <span class="option-price">$279.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-footer">
+                <p class="pricing-note-main">
+                    🎵 Start with Free and upgrade anytime. Your collection is always safe with iCloud Sync.
+                </p>
+                <p class="pricing-disclaimer">
+                    * Prices shown in USD. Local pricing variations may apply based on your region and currency.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download">
+        <div class="container-narrow">
+            <h2 class="download-title">Ready to Listen?</h2>
+            <p class="download-subtitle">Available now on the App Store</p>
+            <a href="https://apps.apple.com/app/vinyl-sessions/id6755359806" class="app-store-badge-link" aria-label="Download on the App Store">
+                <img src="images/download-vinyl-sessions-on-the-appstore.svg" alt="Download on the App Store" class="app-store-badge app-store-badge-large">
+            </a>
+            <p class="download-note">iPhone • Free Download • Apple Music® Integration</p>
+        </div>
+    </section>
+
+    <!-- Feedback CTA -->
+    <section class="feedback-section">
+        <div class="container-narrow">
+            <h2 class="feedback-title">What would you like to see next?</h2>
+            <p class="feedback-subtitle">We'd love to hear your ideas and feedback about Vinyl Sessions.</p>
+            <a href="mailto:soren@vinylsessions.ai?subject=Feature%20Request%20-%20Vinyl%20Sessions" class="feedback-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Send Feedback
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                Vinyl Sessions • Album artwork and music streaming powered by Apple Music® • Musician credits powered by MusicBrainz
+            </p>
+            <p class="footer-copyright">
+                Stitched together, brought to life in a modern vinyl collecting experience. Copyright 2025 by Søren Friis Alexandersen.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+</body>
+</html>
