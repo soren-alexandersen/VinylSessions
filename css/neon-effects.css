@@ -1,0 +1,202 @@
+/* ===================================
+   NEON GLOW EFFECTS
+   80s Retro Style
+   =================================== */
+
+/* ===================================
+   TEXT NEON EFFECTS
+   =================================== */
+
+.neon-text-cyan {
+    color: var(--neon-cyan);
+    text-shadow: 
+        0 0 10px var(--neon-cyan),
+        0 0 20px var(--neon-cyan),
+        0 0 30px var(--neon-cyan),
+        0 0 40px var(--neon-cyan),
+        0 0 70px var(--neon-cyan);
+}
+
+.neon-text-pink {
+    color: var(--neon-pink);
+    text-shadow: 
+        0 0 10px var(--neon-pink),
+        0 0 20px var(--neon-pink),
+        0 0 30px var(--neon-pink),
+        0 0 40px var(--neon-pink),
+        0 0 70px var(--neon-pink);
+}
+
+.neon-text-purple {
+    color: var(--neon-purple);
+    text-shadow: 
+        0 0 10px var(--neon-purple),
+        0 0 20px var(--neon-purple),
+        0 0 30px var(--neon-purple),
+        0 0 40px var(--neon-purple),
+        0 0 70px var(--neon-purple);
+}
+
+.neon-text-yellow {
+    color: var(--neon-yellow);
+    text-shadow: 
+        0 0 10px var(--neon-yellow),
+        0 0 20px var(--neon-yellow),
+        0 0 30px var(--neon-yellow);
+}
+
+.neon-text-green {
+    color: var(--neon-green);
+    text-shadow: 
+        0 0 10px var(--neon-green),
+        0 0 20px var(--neon-green),
+        0 0 30px var(--neon-green),
+        0 0 40px var(--neon-green),
+        0 0 70px var(--neon-green);
+}
+
+/* ===================================
+   ICON/ELEMENT NEON GLOWS
+   =================================== */
+
+.neon-glow-cyan {
+    filter: drop-shadow(0 0 10px var(--neon-cyan))
+            drop-shadow(0 0 20px var(--neon-cyan))
+            drop-shadow(0 0 30px var(--neon-cyan));
+}
+
+.neon-glow-pink {
+    filter: drop-shadow(0 0 10px var(--neon-pink))
+            drop-shadow(0 0 20px var(--neon-pink))
+            drop-shadow(0 0 30px var(--neon-pink));
+}
+
+.neon-glow-purple {
+    filter: drop-shadow(0 0 10px var(--neon-purple))
+            drop-shadow(0 0 20px var(--neon-purple))
+            drop-shadow(0 0 30px var(--neon-purple));
+}
+
+.neon-glow-yellow {
+    filter: drop-shadow(0 0 10px var(--neon-yellow))
+            drop-shadow(0 0 20px var(--neon-yellow))
+            drop-shadow(0 0 30px var(--neon-yellow));
+}
+
+.neon-glow-green {
+    filter: drop-shadow(0 0 10px var(--neon-green))
+            drop-shadow(0 0 20px var(--neon-green))
+            drop-shadow(0 0 30px var(--neon-green));
+}
+
+/* ===================================
+   NEON FLICKER ANIMATIONS
+   =================================== */
+
+@keyframes neonFlicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 
+            0 0 10px currentColor,
+            0 0 20px currentColor,
+            0 0 30px currentColor,
+            0 0 40px currentColor,
+            0 0 70px currentColor;
+        opacity: 1;
+    }
+    20%, 24%, 55% {        
+        text-shadow: 
+            0 0 5px currentColor,
+            0 0 10px currentColor,
+            0 0 15px currentColor;
+        opacity: 0.9;
+    }
+}
+
+/* Gentle Glow - Smoother animation for Safari */
+@keyframes gentleGlow {
+    0%, 100% {
+        text-shadow: 
+            0 0 10px var(--neon-cyan),
+            0 0 20px var(--neon-cyan),
+            0 0 30px var(--neon-cyan);
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 
+            0 0 15px var(--neon-cyan),
+            0 0 25px var(--neon-cyan),
+            0 0 35px var(--neon-cyan),
+            0 0 45px var(--neon-cyan);
+        opacity: 1;
+    }
+}
+
+
+/* ===================================
+   NEON BORDER EFFECTS
+   =================================== */
+
+.neon-border {
+    border: 2px solid var(--neon-cyan);
+    box-shadow: 
+        0 0 10px var(--neon-cyan),
+        inset 0 0 10px var(--neon-cyan);
+}
+
+.neon-border-pink {
+    border: 2px solid var(--neon-pink);
+    box-shadow: 
+        0 0 10px var(--neon-pink),
+        inset 0 0 10px var(--neon-pink);
+}
+
+.neon-border-purple {
+    border: 2px solid var(--neon-purple);
+    box-shadow: 
+        0 0 10px var(--neon-purple),
+        inset 0 0 10px var(--neon-purple);
+}
+
+/* ===================================
+   GLOW ON HOVER
+   =================================== */
+
+.glow-on-hover {
+    transition: all 0.3s ease;
+}
+
+.glow-on-hover:hover {
+    text-shadow: 
+        0 0 10px currentColor,
+        0 0 20px currentColor,
+        0 0 30px currentColor,
+        0 0 40px currentColor;
+    transform: scale(1.05);
+}
+
+/* ===================================
+   CHROME/METALLIC EFFECT (Optional)
+   =================================== */
+
+.chrome-text {
+    background: linear-gradient(
+        90deg,
+        var(--neon-cyan) 0%,
+        var(--neon-purple) 50%,
+        var(--neon-pink) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: chromeShift 3s infinite linear;
+}
+
+@keyframes chromeShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+

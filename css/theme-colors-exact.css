@@ -1,0 +1,113 @@
+/* ============================================
+   EXACT THEME COLORS FROM VINYL SESSIONS APP
+   Direct RGB values from the Swift theme files
+   ============================================ */
+
+:root {
+    /* Walking on Neon (Neon80sTheme) - Default */
+    --bg-dark: rgb(13, 13, 38);                    /* 0.05, 0.05, 0.15 */
+    --bg-card: rgba(26, 26, 51, 0.6);              /* 0.1, 0.1, 0.2, 0.6 */
+    --text-primary: rgb(255, 255, 255);
+    --text-secondary: rgb(179, 179, 204);          /* 0.7, 0.7, 0.8 */
+    
+    --neon-cyan: rgb(0, 230, 230);                 /* 0, 0.9, 0.9 - Primary */
+    --neon-purple: rgb(128, 0, 255);               /* 0.5, 0, 1 - Secondary */
+    --neon-pink: rgb(255, 0, 128);                 /* 1, 0, 0.5 - Tertiary/Pink */
+    --neon-yellow: rgb(255, 230, 0);               /* 1, 0.9, 0 */
+    --neon-green: rgb(0, 255, 128);                /* 0, 1, 0.5 */
+    
+    --glow-intensity: 1;                           /* Full neon glow */
+    --section-spacing: 120px;
+}
+
+/* Highway Through Hell (HeavyMetalTheme) */
+body[data-theme="highway-through-hell"] {
+    --bg-dark: rgb(10, 10, 10);                    /* 0.04, 0.04, 0.04 - Pure black */
+    --bg-card: rgba(26, 26, 26, 0.8);              /* 0.1, 0.1, 0.1 - Dark charcoal */
+    --text-primary: rgb(245, 245, 245);            /* 0.96, 0.96, 0.96 */
+    --text-secondary: rgb(128, 128, 128);          /* 0.5, 0.5, 0.5 */
+    
+    --neon-cyan: rgb(191, 191, 191);               /* 0.75, 0.75, 0.75 - Silver (Secondary) */
+    --neon-purple: rgb(74, 36, 89);                /* 0.29, 0.14, 0.35 - Gothic Purple */
+    --neon-pink: rgb(219, 20, 61);                 /* 0.86, 0.08, 0.24 - Crimson Red (Primary) */
+    --neon-yellow: rgb(204, 153, 0);               /* 0.8, 0.6, 0 - Darker gold */
+    --neon-green: rgb(51, 153, 51);                /* 0.2, 0.6, 0.2 - Dark green */
+    
+    --glow-intensity: 0;                           /* NO glow - sharp embossed */
+}
+
+/* Magic in a Bottle (Y2KTheme) - LIGHT MODE */
+body[data-theme="magic-in-a-bottle"] {
+    --bg-dark: rgb(242, 247, 255);                 /* 0.95, 0.97, 1.0 - Soft blue-white */
+    --bg-card: rgba(250, 250, 255, 0.9);           /* 0.98, 0.98, 1.0, 0.9 */
+    --text-primary: rgb(13, 89, 179);              /* 0.05, 0.35, 0.7 - Vibrant dark blue */
+    --text-secondary: rgb(128, 0, 179);            /* 0.5, 0, 0.7 - Purple */
+    
+    --neon-cyan: rgb(0, 128, 255);                 /* 0, 0.5, 1.0 - Bright Electric Blue */
+    --neon-purple: rgb(128, 0, 230);               /* 0.5, 0, 0.9 - Vivid Purple */
+    --neon-pink: rgb(255, 51, 153);                /* 1.0, 0.2, 0.6 - Bright Hot Pink */
+    --neon-yellow: rgb(255, 179, 0);               /* 1.0, 0.7, 0 - Vibrant Gold */
+    --neon-green: rgb(0, 204, 77);                 /* 0, 0.8, 0.3 - Fresh Lime Green */
+    
+    --glow-intensity: 0.2;                         /* Minimal glow - glossy CSS effect */
+}
+
+/* Funky Little Town (DiscoTheme) - 70s Warm */
+body[data-theme="funky-little-town"] {
+    --bg-dark: rgb(64, 51, 38);                    /* 0.25, 0.2, 0.15 - Deep warm brown */
+    --bg-card: rgba(89, 71, 56, 0.7);              /* 0.35, 0.28, 0.22, 0.7 */
+    --text-primary: rgb(242, 235, 217);            /* 0.95, 0.92, 0.85 - Warm off-white */
+    --text-secondary: rgb(191, 173, 148);          /* 0.75, 0.68, 0.58 - Sandy beige */
+    
+    --neon-cyan: rgb(140, 179, 191);               /* 0.55, 0.7, 0.75 - Pale Blue/Turquoise */
+    --neon-purple: rgb(179, 115, 64);              /* 0.7, 0.45, 0.25 - Rust/Terra Cotta */
+    --neon-pink: rgb(217, 128, 115);               /* 0.85, 0.5, 0.45 - Dusty Rose */
+    --neon-yellow: rgb(230, 191, 77);              /* 0.9, 0.75, 0.3 - Mustard Yellow */
+    --neon-green: rgb(128, 153, 89);               /* 0.5, 0.6, 0.35 - Avocado Green */
+    
+    --glow-intensity: 0;                           /* NO glow - warm shadows only */
+}
+
+/* Another Prick at The Mall (PandemicTheme) - Muted Grey */
+body[data-theme="another-prick-at-the-mall"] {
+    --bg-dark: rgb(31, 33, 36);                    /* 0.12, 0.13, 0.14 - Dark grey-blue */
+    --bg-card: rgba(41, 43, 46, 0.8);              /* 0.16, 0.17, 0.18, 0.8 */
+    --text-primary: rgb(217, 219, 222);            /* 0.85, 0.86, 0.87 - Pale grey-white */
+    --text-secondary: rgb(128, 133, 138);          /* 0.5, 0.52, 0.54 - Mid grey */
+    
+    --neon-cyan: rgb(140, 148, 158);               /* 0.55, 0.58, 0.62 - Steel Grey */
+    --neon-purple: rgb(115, 122, 133);             /* 0.45, 0.48, 0.52 - Slate Grey */
+    --neon-pink: rgb(148, 133, 140);               /* 0.58, 0.52, 0.55 - Dusty Mauve */
+    --neon-yellow: rgb(166, 158, 140);             /* 0.65, 0.62, 0.55 - Muted Sand */
+    --neon-green: rgb(122, 138, 128);              /* 0.48, 0.54, 0.50 - Muted Sage */
+    
+    --glow-intensity: 0;                           /* NO glow - flat and lifeless */
+}
+
+/* Hmmm Hmmm Hmmm Hmmm (NatureTheme) - Earthy */
+body[data-theme="hmmm-hmmm-hmmm-hmmm"] {
+    --bg-dark: rgb(38, 51, 38);                    /* 0.15, 0.2, 0.15 - Deep forest green */
+    --bg-card: rgba(51, 64, 51, 0.7);              /* 0.2, 0.25, 0.2, 0.7 */
+    --text-primary: rgb(230, 235, 224);            /* 0.9, 0.92, 0.88 - Soft cream */
+    --text-secondary: rgb(166, 179, 158);          /* 0.65, 0.7, 0.62 - Sage green */
+    
+    --neon-cyan: rgb(102, 153, 89);                /* 0.4, 0.6, 0.35 - Fresh moss green */
+    --neon-purple: rgb(128, 166, 191);             /* 0.5, 0.65, 0.75 - Sky blue */
+    --neon-pink: rgb(179, 140, 128);               /* 0.7, 0.55, 0.5 - Clay/terracotta */
+    --neon-yellow: rgb(217, 191, 115);             /* 0.85, 0.75, 0.45 - Warm sunlight */
+    --neon-green: rgb(77, 128, 77);                /* 0.3, 0.5, 0.3 - Deep forest */
+    
+    --glow-intensity: 0.4;                         /* Subtle natural organic glow */
+}
+
+
+
+
+
+
+
+
+
+
+
+
